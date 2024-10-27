@@ -1,0 +1,81 @@
+---
+title: "NY NOAA"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+
+library(plotly)
+```
+
+```{r}
+library(dplyr)
+library(rnoaa)
+
+# Get a list of all NY station IDs
+stations = ghcnd_stations()
+nystationids =  stations |>  
+  filter(state == "NY") |>  
+  distinct(id)
+
+# Pull the desired weather data for all of these stations
+nydat = meteo_pull_monitors(nystationids$id, 
+                             date_min = "1981-01-01", 
+                             date_max = "2010-12-31", 
+                             var = c("PRCP", "SNOW", "SNWD", "TMAX", "TMIN"))
+
+# Save the resulting data
+save(nystationids, nydat, file = "nynoaadat.RData")
+```
+
+Do some initial data cleaning/subsetting.
+
+```{r}
+ny_noaa = read_csv(file = "./data/nynoaadat.csv") |> 
+  janitor::clean_names() |> 
+  mutate(
+    year = year(ymd(sub("x", "", month))),
+    month = month(ymd(sub("x", "", month))))
+
+```
+
+
+Use plotly to make some quick plots.
+
+First a scatter plot.
+
+```{r}
+nyc_airbnb |> 
+  mutate(
+    text_label = 
+      str_c("Price: ", price, 
+            "\nNeighbourhood: ", neighbourhood)) |> 
+  plot_ly(
+    x = ~lat, y = ~long, color = ~price, text = ~text_label,
+    type = "scatter", mode = "markers", alpha = 0.5
+  )
+```
+
+Next up -- box plot.
+
+```{r}
+nyc_airbnb |> 
+  mutate(neighbourhood = fct_reorder(neighbourhood, price)) |> 
+  plot_ly(
+    x = ~neighbourhood, y = ~price, color = ~neighbourhood,
+    type = "box", colors = "viridis")
+```
+
+
+Here's a heatmap.
+```{r}
+plot_ly(
+  z = volcano, 
+  type = "heatmap")
+```
+

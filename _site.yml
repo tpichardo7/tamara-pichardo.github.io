@@ -7,6 +7,8 @@ navbar:
       href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:<tamarampichardo@gmail.com>
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/tamara-pichardo-3a87a2228/
     - icon: fa-github fa-lg
       href: http://github.com/tpichardo7/
 output:
