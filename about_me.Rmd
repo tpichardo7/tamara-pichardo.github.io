@@ -6,3 +6,77 @@ output:
     toc_float: true
 ---
 
+# Education
+
+**Columbia University Mailman School of Public Health**, New York, NY   
+expected Aug 2025      
+**Master of Science**, Environmental Health Data Science    
+Related Coursework: Data Science I, Biostatistical Methods I    
+
+**Iona University**, New Rochelle, NY   
+graduated May 2024    
+**Bachelor of Science**, Economics    
+**Bachelor of Arts**, Political Science/Public Policy Track   
+**Bachelor of Arts**, International Studies   
+Related Coursework: Computer Science I, Calculus II, Quantitative Research for Behavioral Sciences I, Econometrics, Applied Statistics, General Physics I
+
+
+# Academic Research Projects
+
+**Ecotourism and the Exploitation of Small Island Developing States**                                   
+Sept 2022 - May 2024    
+_A Case Study of Rural Communities in the Dominican Republic_   
+Advisor: Dr, Jeanne Zaino, PhD
+
+*   Designed and analyzed regression modes comparing current national GDP and GNI index of the Dominican Republic using Gretl software
+
+*   Evaluated the effects of tourist activities and private stakeholder interests to find more sustainable outlets
+
+**Conspicuous Consumption and the Role of the Fast Fashion Industry in Consumer Behavior**      	
+Jan 2024 - May 2024   
+_A Case Study of H&M, Zara, and Shein_    
+Advisor: Dr. Robert Lacey
+
+*   Examined sustainability business models of various fast fashion companies to explore material sourcing and brand transparency
+
+*   Investigated working conditions to consider the relationship between the rate of production and ethical business practices
+
+
+# Professional Experience
+
+**Willkie Farr & Gallagher LLP**, New York, NY    
+May 2023 - Aug 2023   
+_Lateral Partner Recruitment Intern_
+
+*   Transferred over 100 candidate profiles from Excel to ATS, viGlobal to effectively track candidates
+
+*   Assisted communication with headhunters daily to schedule interviews and orientation meetings
+
+**Office of Former New York State Senator Elijah Reichlin-Melnik**, Nanuet, NY    	                    
+Jan 2022 - Jun 2022   
+_Legislative Intern_
+
+*   Answered over 100 constituent phone calls daily and utilized the BlueBird constituent database to monitor constituent information
+
+*   Visited community-led organizations and conversed with constituents regarding outstanding issues
+
+
+# Leadership Experience
+
+**Iona University**, New Rochelle, NY   
+Sept 2022 - May 2024    
+_Peer Tutor_
+
+  * Worked with students to help them understand key concepts learned in various classes including Calculus I, Calculus II, Business Calculus, Precalculus, Macroeconomic Analysis, Microeconomic Analysis
+  
+  * Recognized different learning styles and diagnosed students’ needs through active listening techniques
+  
+  * Attended Calculus I and Calculus II courses to assist the professor with administering in-class assignments and answering students’ questions
+
+
+# Skills and Certifications
+
+**Data Analysis and Statistics**: RStudio, SPSS, Gretl
+**Language Skills**: English, Spanish
+**Certifications**: CITI - Social/Behavioral Research, CITI – Human Subjects Protection Biomed
+

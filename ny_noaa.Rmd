@@ -1,12 +1,14 @@
 ---
 title: "NY NOAA"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
 ```{r}
+library(flexdashboard)
+
 library(tidyverse)
 library(p8105.datasets)
 
@@ -14,68 +16,62 @@ library(plotly)
 ```
 
 ```{r}
-library(dplyr)
-library(rnoaa)
-
-# Get a list of all NY station IDs
-stations = ghcnd_stations()
-nystationids =  stations |>  
-  filter(state == "NY") |>  
-  distinct(id)
-
-# Pull the desired weather data for all of these stations
-nydat = meteo_pull_monitors(nystationids$id, 
-                             date_min = "1981-01-01", 
-                             date_max = "2010-12-31", 
-                             var = c("PRCP", "SNOW", "SNWD", "TMAX", "TMIN"))
-
-# Save the resulting data
-save(nystationids, nydat, file = "nynoaadat.RData")
-```
-
-Do some initial data cleaning/subsetting.
-
-```{r}
 ny_noaa = read_csv(file = "./data/nynoaadat.csv") |> 
   janitor::clean_names() |> 
   mutate(
-    year = year(ymd(sub("x", "", month))),
-    month = month(ymd(sub("x", "", month))))
-
-```
-
-
-Use plotly to make some quick plots.
-
-First a scatter plot.
-
-```{r}
-nyc_airbnb |> 
-  mutate(
-    text_label = 
-      str_c("Price: ", price, 
-            "\nNeighbourhood: ", neighbourhood)) |> 
-  plot_ly(
-    x = ~lat, y = ~long, color = ~price, text = ~text_label,
-    type = "scatter", mode = "markers", alpha = 0.5
+    year = year(date), 
+    month = month(date),
+    day = day(date)
   )
 ```
 
-Next up -- box plot.
 
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+Total Precipitation vs. Total Snow Depth in December 2009
 ```{r}
-nyc_airbnb |> 
-  mutate(neighbourhood = fct_reorder(neighbourhood, price)) |> 
+ny_noaa |> 
+  filter(year == 2009 & month == 12) |>
+  
   plot_ly(
-    x = ~neighbourhood, y = ~price, color = ~neighbourhood,
-    type = "box", colors = "viridis")
+    x = ~day) |> 
+  add_bars(y = ~prcp, name = "Total Precipitation", marker = list(color = '#21918c')) |> 
+  add_bars(y = ~snwd, name = "Total Snow Depth", marker = list(color = '#440154'))
 ```
 
+Column {data-width=350}
+-----------------------------------------------------------------------
 
-Here's a heatmap.
+### Chart B
+
+Total Precipitation from 2000-2010
 ```{r}
-plot_ly(
-  z = volcano, 
-  type = "heatmap")
+ny_noaa |> 
+  filter(year == c(2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010)) |> 
+  mutate(
+    text_label = 
+      str_c("ID: ", id, 
+            "Precipitation: ", prcp, 
+            "Date: ", date)) |> 
+  plot_ly(
+    x = ~year, y = ~prcp, color = ~year, text = ~text_label,
+    type = "scatter", mode = "markers", alpha = 0.5)
+```
+
+### Chart C
+
+Average Precipitation by Month from 2000-2010
+```{r}
+ny_noaa |> 
+  filter(year == c(2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010)) |> 
+  group_by(year, month) |> 
+  summarize(avg_prcp = mean(prcp, na.rm = TRUE)) |> 
+  filter(!is.na(avg_prcp)) |> 
+  plot_ly(
+    x = ~month, y = ~year, z = ~avg_prcp,
+    type = "heatmap")
 ```
 

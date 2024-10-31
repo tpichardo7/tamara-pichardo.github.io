@@ -1,9 +1,22 @@
 ---
-title: "Home"
+title: "Welcome!"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-[About Me](about.html)
+  My name is Tamara Pichardo and I am currently pursuing a Master's in Environmental Health Data Science at Columbia University Mailman School of Public Health. I am seeking an opportunity to apply my qualitative research skills and experience to a highly engaging research position. 
+
+  Throughout my academic experience, I have developed strong qualitative research skills, including conducting literature reviews and analyzing complex datasets through software such as Gretl. I have also applied a precise attention to detail within qualitative research through transcription, coding, and analysis. My experience consists of examining harmful environmental impacts of ecotourism in the Dominican Republic and investigating fast fashion company business models' as well as treatment of workers to influence consumer behavior. These research projects have provided a solid foundation into research methodologies surrounding global communities.    
+
+
+# Explore this Site
+To learn more about me please visit the 
+[About](about_me.html) page.
+
+To explore data about New York from the National Oceanic and Atmospheric Association, NOAA, please visit the [NY NOAA](ny_noaa.html) page.
+
+
+# Contact Me
+Don't forget to visit my [LinkedIn](https://www.linkedin.com/in/tamara-pichardo-3a87a2228/) and [GitHub](http://github.com/tpichardo7/), or feel free to [email me](mailto:<tamarampichardo@gmail.com>) with any questions or concerns. 

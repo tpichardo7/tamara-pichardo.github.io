@@ -3,8 +3,10 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About Me"
-      href: about.html
+    - text: "About"
+      href: about_me.html
+    - text: "NY NOAA"
+      href: ny_noaa.html
     - icon: fa-envelope fa-lg
       href: mailto:<tamarampichardo@gmail.com>
     - icon: fa-linkedin fa-lg
