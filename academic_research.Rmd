@@ -1,0 +1,13 @@
+---
+title: "Academic Research"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Elk Expeditions: The Elk, the Environment, and the Evolving Migration in Yellowstone
+
+# Conspicuous Consumption and the Role of the Fast Fashion Industry in Consumer Behavior
+
+# Ecotourism and the Exploitation of Small Island Developing States
