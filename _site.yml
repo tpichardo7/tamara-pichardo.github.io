@@ -1,12 +1,34 @@
-name: "Yay internet!"
+name: "Portfolio"
 output_dir: "."
 navbar:
-  title: "Home"
+  title: "Tamara Pichardo"
   right:
-    - text: "About"
+    - text: "Resume"
       href: about_me.html
-    - text: "NY NOAA"
-      href: ny_noaa.html
+    - text: "Academic Research"
+      href: academic_research.html
+      menu:
+        - text: "Dengue Projections"
+          href: dengue.html 
+        - text: "Drinking Water"
+          href: drinking_water.html 
+        - text: "Elk Expeditions"
+          href: elk.html
+        - text: "Fast Fashion"
+          href: fast_fashion.html 
+        - text: "PFAS"
+          href: pfas.html 
+    - text: "Sports Analytics"
+      href: sports_analytics.html
+      menu:
+        - text: "Baseball"
+          href: baseball.html
+        - text: "Basketball"
+          href: basketball.html
+        - text: "Football"
+          href: football.html
+        - text: "Volleyball"
+          href: volleyball.html
     - icon: fa-envelope fa-lg
       href: mailto:<tamarampichardo@gmail.com>
     - icon: fa-linkedin fa-lg
