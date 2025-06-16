@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
+volleydata/data/*.mp4
+data/*.csv
