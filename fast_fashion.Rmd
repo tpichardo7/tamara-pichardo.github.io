@@ -1,0 +1,13 @@
+---
+title: "Conspicuous Consumption and the Role of the Fast Fashion Industry in Consumer Behavior"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# A Case Study of H&M, Zara, and Shein    
+
+*   Conducted statistical analyses to evaluate market strategies and consumer behavior trends in the fast fashion industry
+
+*   Analyzed cost-effectiveness and ethical business practices, providing insights on consumer purchasing decisions 
