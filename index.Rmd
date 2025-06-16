@@ -1,5 +1,5 @@
 ---
-title: "Welcome!"
+title: "Home"
 output: 
   html_document:
     toc: true
@@ -13,9 +13,11 @@ output:
 
 # Explore this Site
 To learn more about me please visit the 
-[About](about_me.html) page.
+[Resume](about_me.html) page.
 
-To explore data about New York from the National Oceanic and Atmospheric Association, NOAA, please visit the [NY NOAA](ny_noaa.html) page.
+To view my previous academic research, please visit the [Academic Research](academic_research.html) page.
+
+To view my sports analytics projects, please visit the [Sports Analytics](sports_analytics.html) page.
 
 
 # Contact Me
