@@ -1,0 +1,12 @@
+---
+title: "Dengue"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+Assessing Aedes aegypti activity and dengue infection using CMIP5 temperature projections for Los Angeles, California: an exercise in temperature-dependent variability
+Advisor: Wan Yang, PhD
+
