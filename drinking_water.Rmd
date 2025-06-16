@@ -1,0 +1,10 @@
+---
+title: "Drinking Water"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+Drinking Water Contamination and Low Birth Weight in California: A Statistical Analysis
+Advisor: Marianthi-Anna Kioumourtzoglou, ScD, MSPH
