@@ -1,0 +1,15 @@
+---
+title: "Elk Expeditions"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# The Elk, the Environment, and the Evolving Migration in Yellowstone    
+
+*   Explored movement of 17 female elk through Yellowstone and the Grand Tetons National Park from 2006-2015   
+
+*   Considered environmental factors such as weather, land cover, and water quality using R’s mapping capabilities to create an interactive visualization platform and assess differences in migration patterns    
+
+**Shiny App**: https://855lqb-tamara-pichardo.shinyapps.io/tp_elk/ 
