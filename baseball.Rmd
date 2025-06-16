@@ -1,0 +1,12 @@
+---
+title: "Baseball"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+**Title**: Top 10 MLB Hitters of 2024: A Data-Driven Look   
+**Description**: pulled MLB player stats using MLB Stats API, filtered for top 10 based on hitting percentage and visualized via bar chart.    
+**Key Skills**: data wrangling, data visualization (matplotlib), baseball stats knowledge   
+**Link**: GitHub + chart image or embedded interactive version
