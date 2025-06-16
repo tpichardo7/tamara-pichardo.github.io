@@ -1,0 +1,16 @@
+---
+title: "cleaning_data"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(rpart)
+```
+
+```{r}
+team = read_csv(file = "./football playoffs/data/OSUHackathon2025_TeamGameData.csv") |> 
+  janitor::clean_names()
+player = read_csv(file = "./football playoffs/data/OSUHackathon2025_PlayerTotalPointsData.csv") |> 
+  janitor::clean_names()
+```
