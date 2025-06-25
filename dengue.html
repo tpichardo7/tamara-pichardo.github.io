@@ -11,7 +11,7 @@
 
 
 
-<title>Dengue</title>
+<title>Dengue Projections</title>
 
 <script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -398,14 +398,197 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Dengue</h1>
+<h1 class="title toc-ignore">Dengue Projections</h1>
 
 </div>
 
 
 <p>Assessing Aedes aegypti activity and dengue infection using CMIP5
 temperature projections for Los Angeles, California: an exercise in
-temperature-dependent variability Advisor: Wan Yang, PhD</p>
+temperature-dependent variability<br />
+<strong>Advisor: Wan Yang, PhD</strong></p>
+<div id="research-question" class="section level3">
+<h3><strong>Research Question</strong></h3>
+<p>What is the evidence-based effect of temperature-dependent parameters
+on a modeled initial outbreak of dengue fever under CMIP6 projections
+for Los Angeles, California?</p>
+</div>
+<div id="methods" class="section level3">
+<h3><strong>Methods</strong></h3>
+<div id="model-formulation" class="section level4">
+<h4>Model Formulation</h4>
+<p>A single-strain, deterministic model was developed to study the
+transmission dynamics of a dengue outbreak in Los Angeles in 2025 given
+projected average annual temperatures.</p>
+<p>Parameters consisted of susceptible, exposed, and infectious female
+adult mosquitoes as well as susceptible, exposed, infectious, and
+recovered humans.<br />
+The total population for both moquitoes and humans were denoted by NV
+and NH, respectively, and calculated by adding susceptible, exposed,
+infectious, and recovered populations.</p>
+<p>Model dynamics are described by a system of seven ordinary
+differential equations. The model did not account for the inflow of
+dengue through immigration or travel in order to focus on local
+transmission dynamics to understand the cases related to local
+mosquito-borne transmission.</p>
+<p><img src = "images/SEIR_model.png" style = "width:75%"></p>
+<p><img src = "images/differential_equations.png" style = "width:75%"></p>
+</div>
+<div id="parameters-independent-of-temperature" class="section level4">
+<h4>Parameters Independent of Temperature</h4>
+<p>Parameters were obtained directly from peer-reviewed literature or
+scientifically-grounded assumptions.<br />
+Temperature independent parameters include:</p>
+<ul>
+<li>latent and infectious periods for humans<br />
+</li>
+<li>the human birth and death rate<br />
+</li>
+<li>the human-to-mosquito and mosquito-to-human transmission
+probabilities</li>
+</ul>
+</div>
+<div id="parameters-dependent-on-temperature" class="section level4">
+<h4>Parameters Dependent on Temperature</h4>
+<p>Temperature independent parameters include:</p>
+<ul>
+<li>the biting rate of the <em>Aedes</em> mosquito<br />
+</li>
+<li>the per-bite probability of infection from human to mosquito<br />
+</li>
+<li>the per-bite probability of infection from mosquito to human<br />
+</li>
+<li>the mosquito mortality rate<br />
+</li>
+<li>the mosquito birth rate</li>
+</ul>
+<p>The change in biting rate relative to temperature has previously been
+described using a Briere function, while other temperature-dependent
+parameters were estimated over a range of biologically-reasonable
+temperatures. These mechanistic equations were placed within the ODE
+function.</p>
+<p>Baseline temperatures were based on CMIP6 projections for Los Angeles
+in 2050, ranging from RCP 4.5 tp RCP 8.5.</p>
+<p>Overall outbreak characteristics were determined by setting the
+initial number of infected humans and mosquitos to 10 and running the
+simulation while varying the starting temperature.</p>
+<p><img src = "images/dengue_parameters.png" style = "width:75%"></p>
+</div>
+</div>
+<div id="results" class="section level3">
+<h3><strong>Results</strong></h3>
+<p>The function revealed that the peak number of infectious humans
+varied at unique predicted temperatures.</p>
+<p>The peak number of infectious humans was greatest at a starting
+temperature of 29 degrees Celsius, followed by a starting temperature of
+27.5 degrees, 26 degrees, 24.5 degrees, and 23 degrees, with 21.5
+degrees projected to have the lowest number of infected individuals at
+peak epidemic.</p>
+<p>Maximum number of infectious humans is 206.43 humans at a temperature
+of 29 degrees Celsius.</p>
+<p>Although all six predicted temperatures show the epidemic end within
+3 months, higher starting temperatures result in slightly longer
+epidemics. As temperature decreases, the length of the epidemic
+decreases.</p>
+<p><img src = "images/projected_outbreaks.png" style = "width:75%"></p>
+</div>
+<div id="discussion" class="section level3">
+<h3><strong>Discussion</strong></h3>
+<p>The study assesses the evidence-based effect of temperature-dependent
+parameters on a modeled initial outbreak of dengue fever under CMIP6
+projections for Los Angeles, California. By incorporating
+temperature-dependent dengue virus dynamics of Aedes aegypti mosquitoes
+in an SEIR framework, our model reflects that within the time pperiod
+provided, climate change and rising temperature can influence conditions
+to endemic transmission, especially in urban areas such as Los Angeles
+affected by heat island effects.</p>
+<p>The use of temperature-dependent parameters reflects biological
+relationships between climate change and dengue virus dynamics. This
+improves its ability to project realistic risk under various climate
+scenarios.</p>
+<p>Future research should aim to integrate seasonality, simulate
+multiple dengue serotypes, and test intervention scenarios such as
+vaccination or vector-control.</p>
+</div>
+<div id="sources" class="section level3">
+<h3><strong>Sources</strong></h3>
+<ol style="list-style-type: decimal">
+<li><p>Dengue and severe dengue. Accessed May 6, 2025. <a
+href="https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue"
+class="uri">https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue</a></p></li>
+<li><p>X, Email, Bluesky. SoCal officials unleash sterile mosquitoes in
+bid to curb disease — with promising results. Los Angeles Times. May 6,
+2025. Accessed May 6, 2025. <a
+href="https://www.latimes.com/environment/story/2025-05-06/sterile-male-mosquitoes-los-angeles-san-bernardino-dengue-aedes"
+class="uri">https://www.latimes.com/environment/story/2025-05-06/sterile-male-mosquitoes-los-angeles-san-bernardino-dengue-aedes</a></p></li>
+<li><p>CDC. Current Dengue Outbreak. Dengue. April 22, 2025. Accessed
+May 6, 2025. <a
+href="https://www.cdc.gov/dengue/outbreaks/2024/index.html"
+class="uri">https://www.cdc.gov/dengue/outbreaks/2024/index.html</a></p></li>
+<li><p>CDC. Potential Range of Aedes Mosquitoes. Mosquitoes. July 1,
+2024. Accessed May 6, 2025. <a
+href="https://www.cdc.gov/mosquitoes/php/toolkit/potential-range-of-aedes.html"
+class="uri">https://www.cdc.gov/mosquitoes/php/toolkit/potential-range-of-aedes.html</a></p></li>
+<li><p>Mapping Aedes aegypti (Diptera: Culicidae) and Aedes albopictus
+Vector Mosquito Distribution in Brownsville, TX | Journal of Medical
+Entomology | Oxford Academic. Accessed May 6, 2025. <a
+href="https://academic.oup.com/jme/article/57/1/231/5545953"
+class="uri">https://academic.oup.com/jme/article/57/1/231/5545953</a></p></li>
+<li><p>Liu Z, Zhang Q, Li L, et al. The effect of temperature on dengue
+virus transmission by Aedes mosquitoes. Front Cell Infect Microbiol.
+2023;13:1242173. <a href="doi:10.3389/fcimb.2023.1242173"
+class="uri">doi:10.3389/fcimb.2023.1242173</a></p></li>
+<li><p>Mordecai EA, Cohen JM, Evans MV, et al. Detecting the impact of
+temperature on transmission of Zika, dengue, and chikungunya using
+mechanistic models. PLoS Negl Trop Dis. 2017;11(4):e0005568. <a
+href="doi:10.1371/journal.pntd.0005568"
+class="uri">doi:10.1371/journal.pntd.0005568</a></p></li>
+<li><p>Trejo I, Barnard M, Spencer JA, et al. Changing temperature
+profiles and the risk of dengue outbreaks. PLOS Clim.
+2023;2(2):e0000115. <a href="doi:10.1371/journal.pclm.0000115"
+class="uri">doi:10.1371/journal.pclm.0000115</a></p></li>
+<li><p>Damtew YT, Tong M, Varghese BM, et al. Effects of high
+temperatures and heatwaves on dengue fever: a systematic review and
+meta-analysis. eBioMedicine. 2023;91. <a
+href="doi:10.1016/j.ebiom.2023.104582"
+class="uri">doi:10.1016/j.ebiom.2023.104582</a></p></li>
+<li><p>Lee H, Kim JE, Lee S, Lee CH (2018) Potential effects of climate
+change on dengue transmission dynamics in Korea. PLoS ONE 13(6):
+e0199205. <a href="https://doi.org/10.1371/journal.pone.0199205"
+class="uri">https://doi.org/10.1371/journal.pone.0199205</a></p></li>
+<li><p>Arévalo-Cortés, A., Granada, Y., Torres, D., &amp; Triana-Chavez,
+O. (2022). Differential Hatching, Development, Oviposition, and
+Longevity Patterns among Colombian Aedes aegypti Populations. Insects,
+13(6), 536. <a href="https://doi.org/10.3390/insects13060536"
+class="uri">https://doi.org/10.3390/insects13060536</a></p></li>
+<li><p>Mordecai EA, Cohen JM, Evans MV, Gudapati P, Johnson LR, et
+al. (2022) Correction: Detecting the impact of temperature on
+transmission of Zika, dengue, and chikungunya using mechanistic models.
+PLOS Neglected Tropical Diseases 16(6): e0010514. <a
+href="https://doi.org/10.1371/journal.pntd.0010514"
+class="uri">https://doi.org/10.1371/journal.pntd.0010514</a>)</p></li>
+<li><p>High/low &amp; average temperatures by month &amp; Year downtown
+Los Angeles. Monthly High/Low and Average Temperatures by Year for
+Downtown Los Angeles, California. (n.d.). <a
+href="https://www.laalmanac.com/weather/we04a.php#google_vignette"
+class="uri">https://www.laalmanac.com/weather/we04a.php#google_vignette</a>)</p></li>
+<li><p>Adapt. Cal. (n.d.). <a
+href="https://cal-adapt.org/tools/annual-averages/"
+class="uri">https://cal-adapt.org/tools/annual-averages/</a></p></li>
+<li><p>Bedsworth, Louise, Dan Cayan, Guido Franco, Leah Fisher, Sonya
+Ziaja. (California Governor’s Office of Planning and Research, Scripps
+Institution of Oceanography, California Energy Commission, California
+Public Utilities Commission). 2018. Statewide Summary Report.
+California’s Fourth Climate Change Assessment. Publication number:
+SUM-CCCA4-2018-013.)</p></li>
+<li><p>Yang H, Macoris M, Galvani K, Andrighetti M, Wanderley D.
+Assessing the effects of temperature on the population of Aedes aegypti,
+the vector of dengue. Epidemiology and Infection.
+2009;137(08):1188–1202. <a href="pmid:19192322"
+class="uri">pmid:19192322</a> View ArticlePubMed/NCBIGoogle
+Scholar</p></li>
+</ol>
+</div>
 
 
 
