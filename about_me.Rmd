@@ -6,37 +6,17 @@ output:
     toc_float: true
 ---
 
-# Education
-
-**Columbia University Mailman School of Public Health**, New York, NY       
-**Master of Science**, Environmental Health Data Science    
-
-**Iona University**, New Rochelle, NY     
-**Bachelor of Science**, Economics    
-**Bachelor of Arts**, Political Science/Public Policy Track   
-**Bachelor of Arts**, International Studies       
-
-
 # Professional Experience
-
-**Columbia University**, New York, NY    
-_Research Assistant_ | May 2025 - Present  
-
-Community Health Advisory & Information Network (CHAIN) Project 
-
-*   Assist in the collection, cleaning, and analysis of quantitative and qualitative data    
-
-*   Support the development of research proposals, including drafting sections and organizing supporting materials   
 
 **Rutgers University**, New Brunswick, NJ    
 _Sports Data Analyst_ | August 2024 - Present  
 
-*   Design and conduct statistical analysis of team performance data using tools like R and Python, generating actionable insights for diverse audiences
+*   Collaborate with B1G+ production teams, coaching staff, and sports information personnel to identify performance trends and prepare comprehensive match notes covering over 20 athletes per match 
 
-*   Collaborate with stakeholders to identify trends in data, informing strategy and aligning with team goals    
+*   Analyze player and team performance data using R and Python, producing 15-20 data visuals and statistical summaries per match to support on-air insights 
 
 **Pinnacle Volleyball Academy**, West Nyack, NY    
-_Assistant Coach/Technical Director_ | December 2019 - Present  
+_Head Coach/Technical Director_ | December 2019 - Present  
 
 *   Partner with coaching staff to design practice plans and game strategies informed by player performance metrics and opponent analytics for 100+ athletes
 
@@ -45,11 +25,9 @@ _Assistant Coach/Technical Director_ | December 2019 - Present
 **Iona University**, New Rochelle, NY    
 _NCAA Division I Student-Athlete_ | August 2020 - May 2024  
 
-*   Conducted scouting reports on opposing teams by analyzing video footage, identifying offensive/defensive tendencies, and contributing to match strategies
+*   Produced scouting reports on opposing teams by analyzing video footage, identifying offensive/defensive tendencies, and contributing to match strategies
 
-*   Collaborated with teammates and staff to implement tactical adjustments based on data-driven insights, including serve/receive patterns, hitting efficiency and blocking schemes    
-
-*   Developed leadership, communication, and analytical skills in a high-pressure, team-oriented environment       
+*   Collaborated with teammates and staff to implement tactical adjustments based on data-driven insights, including serve/receive patterns, hitting efficiency and blocking schemes     
 
 # Research Experience
 
@@ -81,19 +59,30 @@ Advisor: Robert Lacey, PhD
 
 *   Analyzed cost-effectiveness and ethical business practices, providing insights on consumer purchasing decisions       
 
+# Education
+
+**Columbia University Mailman School of Public Health**, New York, NY       
+**Master of Science**, Environmental Health Data Science    
+
+**Iona University**, New Rochelle, NY     
+**Bachelor of Science**, Economics    
+**Bachelor of Arts**, Political Science/Public Policy Track   
+**Bachelor of Arts**, International Studies       
+
 
 # Skills and Certifications
 
-**Data Analysis and Statistics**: R/R Studio, Python, SQL, SPSS, Gretl, Tableau, Power BI   
+**Data Analysis and Statistics**: R/R Studio, Python, SQL
 **Language Skills**: English, Spanish   
-**Certifications**: Biomedical Research (CITI), Social/Behavioral Research (CITI), Human Subjects Protection Biomed (CITI)       
+**Certifications**: Biomedical Research, Social/Behavioral Research, Human Subjects Protection Biomed       
 
 # Related Coursework
 
 *   Data Science I/II   
 *   Biostatistical Methods I/II   
-*   Advanced GIS and Spatial Analysis   
-*   Advanced Analytical Methods in Environmental Health Sciences    
-*   Epi Modeling for Infectious Diseases    
-*   Environmental Determinants of Human Health II
+*   Advanced Analytical Methods in Environmental Health Sciences  
+*   Econometrics   
+*   Intermediate Micro/Macroeconomic Analysis    
+*   Economics of Money and Banking
+*   International Economics
 
