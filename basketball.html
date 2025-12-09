@@ -403,7 +403,70 @@ div.tocify {
 </div>
 
 
-
+<p><img src = "images/steph_shot_freq.png" style = "width:50%"><img src = "images/steph_shooting_accuracy.png" style = "width:50%">
+<img src = "images/steph_curry_shot_heatmap.png" style = "width:75%"></p>
+<div id="nba-shot-visualization-heatmap-analysis"
+class="section level3">
+<h3><strong>NBA Shot Visualization &amp; Heatmap Analysis</strong></h3>
+<p><strong>Description</strong>: A data visualization that analyzes NBA
+shot selection and performance using player-level shot attempt
+coordinates for Lebron James, James Harden, and Steph Curry. The
+notebook produces multiple visual insights—including bar charts,
+standard shot charts, and spatial heatmaps—layered on top of a
+custom-drawn NBA court. The goal is to understand shot tendencies,
+efficiency, and spatial patterns.</p>
+<p><strong>Tools &amp; Technologies</strong>: Python, Jupyter Notebook,
+pandas, numpy, matplotlib, seaborn, data cleaning, coordinate-based shot
+chart visualization</p>
+<p><strong>Project Structure</strong>:</p>
+<ul>
+<li>Notebook for data loading, cleaning, and visualization</li>
+<li>CSV file containing raw shot-level data<br />
+</li>
+<li>Custom function for drawing NBA court graphics<br />
+</li>
+<li>Output images: scatter shot chart, heatmap, hexbin map, distribution
+plots</li>
+</ul>
+<p><strong>Problem Statement</strong>: How can we visually analyze a
+player’s shooting tendencies across the court using coordinate data, and
+identify where shots are taken most frequently?</p>
+<p><strong>Methodology</strong>:</p>
+<ul>
+<li>Loaded and cleaned raw shot-level data (made vs. missed, shot
+type)<br />
+</li>
+<li>Created exploratory visualizations (bar charts, pie charts)</li>
+<li>Built a custom NBA court using matplotlib shapes (arcs, rectangles,
+circles)<br />
+</li>
+<li>Plotted shot attempts to produce:
+<ul>
+<li>Scatter shot chart (made vs. missed)<br />
+</li>
+<li>Heatmap of shot density</li>
+<li>Hexbin map for smoothed spatial density patterns</li>
+</ul></li>
+</ul>
+<p><strong>Results</strong>:</p>
+<ul>
+<li>Complete shot chart visualizing makes/misses across the entire
+court</li>
+<li>Heatmap and hexbin visualizations highlighting high-volume shooting
+zones<br />
+</li>
+<li>Contextual court background for clear spatial interpretation</li>
+</ul>
+<p><strong>Future Improvements</strong>:</p>
+<ul>
+<li>Add efficiency overlays (FG%, eFG% by zone)</li>
+<li>Integrate player comparison mode (multiple players or seasons)</li>
+<li>Add interactivity using Plotly Dash or Streamlit<br />
+</li>
+<li>Build into a full web dashboard with filters for shot type, game,
+quarter, etc.</li>
+</ul>
+</div>
 
 
 
