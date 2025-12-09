@@ -10,5 +10,34 @@ output:
 
 ### **Top 10 MLB Hitters of 2024: A Data-Driven Look**   
 **Description**: pulled MLB player stats using MLB Stats API, filtered for top 10 based on hitting percentage and visualized via bar chart.   
-**Key Skills**: Data wrangling, data visualization (matplotlib), baseball stats knowledge   
+
+**Tools & Technologies**: Python, Data wrangling, data visualization (matplotlib), MLB Stats API  
+
+**Project Structure**: 
+
+*   Jupyter notebook with data wrangling and visualization 
+*   Bar chart output
+
+**Problem Statement**: Who were the top 10 hitters last season based on advanced offensive metrics?
+
+**Methodology**: 
+
+*   Pulled full player-season dataset 
+*   Filtered based on PA > X to remove small sample sizes  
+*   Sorted by batting average 
+*   Created bar chart to compare players
+
+**Results**:  
+
+*   Identified top 10 hitters with high offensive impact  
+*   Visualized with clear, labeled bar chart
+
+**Future Improvements**:
+
+*   Add percentile ranks: show how top 10 hitters compare to league average 
+*   Include defensive value: combine with defensive stats like DRS or UZR to create an overall value ranking 
+*   Use interactive visuals: build interactive charts with Plotly for users to filter by team, stat, or position 
+*   Add historical comparisons: see how the top 10 of this season compare with past seasons 
+
+
 **Link**: [GitHub](https://github.com/tpichardo7/mlbviz.git)
