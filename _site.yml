@@ -6,7 +6,6 @@ navbar:
     - text: "Resume"
       href: about_me.html
     - text: "Academic Research"
-      href: academic_research.html
       menu:
         - text: "Dengue Projections"
           href: dengue.html 
@@ -19,7 +18,6 @@ navbar:
         - text: "PFAS"
           href: pfas.html 
     - text: "Sports Analytics"
-      href: sports_analytics.html
       menu:
         - text: "Baseball"
           href: baseball.html
