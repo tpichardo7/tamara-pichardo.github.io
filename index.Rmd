@@ -6,6 +6,8 @@ output:
     toc_float: true
 ---
 
+<img src = "images/headshot.jpg" style = "width:50%">
+
   My name is Tamara Pichardo and I am currently pursuing a Master's in Environmental Health Data Science at Columbia University Mailman School of Public Health. I am seeking an opportunity to apply my qualitative research skills and experience to a highly engaging research position. 
 
   Throughout my academic experience, I have developed strong qualitative research skills, including conducting literature reviews and analyzing complex datasets through software such as Gretl. I have also applied a precise attention to detail within qualitative research through transcription, coding, and analysis. My experience consists of examining harmful environmental impacts of ecotourism in the Dominican Republic and investigating fast fashion company business models' as well as treatment of workers to influence consumer behavior. These research projects have provided a solid foundation into research methodologies surrounding global communities.    
