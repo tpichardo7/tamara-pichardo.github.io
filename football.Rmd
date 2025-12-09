@@ -12,9 +12,33 @@ output:
 <img src = "images/football_predictor.png" style = "width:75%">
 
 ### **Machine Learning Model to Predict NCAA Football Game Outcomes**    
-**Description**: Created a classification model to predict win/loss based on features such as overall offensive efficiency per play, percentage of plays with positive EPA, percentage of explosive, high-impact plays, and percentage of failed or negative plays. Evaluated using confusion matrix and acccuracy.   
+**Description**: This project builds a machine learning classifier to predict whether a college football team will win based on performance stats such as overall offensive efficiency per play, percentage of plays with positive EPA, percentage of explosive, high-impact plays, and percentage of failed or negative plays.
 
-**Key Skills**: Machine learning (random forest), model evaluation, scikit-learn    
+**Tools & Technologies**: Python, Machine learning (random forest), model evaluation, scikit-learn    
+
+**Project Structure**:  
+
+*   Jupyter notebook with EDA, modeling, and evaluation  
+*   Raw and cleaned datasets  
+*   Confusion matrix and visualizations 
+
+**Problem Statement**: Can we predict the outcome of an NCAA football game using pre-game or team-level performance stats?  
+
+**Methodology**:  
+
+*    Cleaned and selected relevant features from historical stats  
+*    Used logistic regression and random forest classifiers  
+
+**Results**:  
+
+*    Best model accuracy: 79%  
+*    Confusion matrix showed better precision for predicting wins than losses  
+
+**Future Improvements**:  
+
+*    Test advanced models: incorporate XGBoost, gradient boosting, or neural networks and compare with baseline models   
+*    Add player-level data: bring in stats such as rushing yards per attempt and sacks to improve prediction power   
+*    Use real-time game data: try building an in-game win probability model using current drive stats (similar to ESPN’s Win Probability)  
 
 **Link**: [GitHub](https://github.com/tpichardo7/footballml.git)
 
