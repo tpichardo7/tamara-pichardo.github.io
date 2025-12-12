@@ -39,5 +39,12 @@ output:
 *   Use advanced volleyball metrics: Calculate metrics such as expected side-out percentage, serve efficiency based on serve receive efficiency, and rotation success rate 
 
 
-**Link**: [GitHub](https://github.com/tpichardo7/volleydashboard.git)
+**Link**: [GitHub](https://github.com/tpichardo7/volleydashboard.git)     
 
+
+
+
+<img src = "images/scout players.png" style = "width:32%"><img src = "images/scout systems.png" style = "width:32%"><img src = "images/scout rotations.png" style = "width:32%">
+
+### **Scouting Report**  
+**Description**: A scouting report used for St. Thomas Aquinas College. Report includes most likely starting lineup from analyzing 5 most recent matches of opponents. Specific player statistics, hitting tendencies and space available to write extra notes when reviewing with team. Includes defensive systems (blocking formation, floor defense system, players to watch and targets). Includes plays that will work against opponent defense, specifically for transition, serve receive, and free ball situations. Includes common plays opponent will run out of serve receive and serving targets.
